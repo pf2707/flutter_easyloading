@@ -249,6 +249,7 @@ class EasyLoading {
   static Future<void> show({
     String? status,
     Widget? indicator,
+    Duration? duration,
     EasyLoadingMaskType? maskType,
     bool? dismissOnTap,
   }) {
@@ -256,6 +257,7 @@ class EasyLoading {
     return _instance._show(
       status: status,
       maskType: maskType,
+      duration: duration,
       dismissOnTap: dismissOnTap,
       w: w,
     );
